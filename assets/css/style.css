@@ -24,6 +24,7 @@ header {
     padding: 0 1 rem;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 
 /** Removing the underline from the header and nav items and giving them the correct colour **/
@@ -32,16 +33,17 @@ header a {
     color: rgb(248, 247, 242);
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: 2.5px;
-
+    color:rgb(248, 247, 242);
 }
 
 #nav-menu {
     font-size: 120%;
     letter-spacing: 5px;
     list-style-type: none;
+
 }
 
 /** Main **/
@@ -49,6 +51,28 @@ main {
     /* Make main content take up any extra space to move and push down the footer to the bottom */
     flex: 1 0 auto;
     margin-top: 100px;
+}
+
+/** Style rules for the banner on homepage **/
+
+#homepage-banner {
+    background-color:#989898;
+    font-size:150%;
+    text-align:center;
+    position:absolute;
+    width:75%;
+    top:125px;
+    left:15px;
+
+}
+
+#why {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 200%;
+    margin-top: 20px;
 }
 
 /** Welder **/
